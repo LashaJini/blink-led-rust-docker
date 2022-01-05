@@ -1,0 +1,11 @@
+[Unit]
+Description=Blink LED on GPIO 23
+After=multi-user.target
+
+[Service]
+ExecStart=/home/pi/ws/blink-led
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
